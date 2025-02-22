@@ -32,14 +32,10 @@ body {
   text-decoration: none;
 }
 
-/* Responsive Navbar */
+/* Responsive Navbar - Hides on mobile */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
   .navbar {
-    flex-direction: column;
-    text-align: center;
+    display: none;
   }
 }
 
@@ -67,6 +63,7 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 /* Responsive Job Cards */
@@ -76,11 +73,17 @@ body {
   }
 }
 
-/* Testimonials */
+/* Testimonials Section */
 .testimonials {
   text-align: center;
   padding: 30px;
   background: #eee;
+  font-size: 1.2rem;
+}
+
+.testimonial {
+  font-style: italic;
+  margin-bottom: 15px;
 }
 
 /* Footer */
@@ -99,6 +102,11 @@ body {
   color: white;
   margin: 0 10px;
   font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #007bff;
 }
 
 /* Responsive Footer */
